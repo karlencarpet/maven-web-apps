@@ -11,7 +11,7 @@
 <body>
 <h1 align="center">Landmark Technologies</h1>
 <h2 align="center"> Welcome to Landmark Technologies.
-	Special testimony and thanksgiving session coming up on Sunday July 25, 2021 @ 4:00 pm
+	Special testimony and thanksgiving session coming up on Saturday July 24, 2021 @ 7:00 pm
 	Landmark Technology is a an ideal online training  platform for DevOps, Plaform and Cloud Engineers. 
 	We offer interview preparations and job assitance.
 	The shout of the King is in our midst. His name is JESUS.  HE IS OUR SUCCESS ACCESS KEY</h2>
