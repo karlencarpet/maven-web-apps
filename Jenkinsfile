@@ -25,7 +25,7 @@ Landmark Technologies''', recipientProviders: [developers()], subject: 'status o
   }
 
   stage('DeployTomcat') {
-    deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://3.142.248.143:8080/')], contextPath: null, war: 'target/*war'
+    deploy adapters: [tomcat9(credentialsId: 'tomcat2', path: '', url: 'http://3.142.248.143:8080/')], contextPath: null, war: 'target/*war'
   }
   stage('emailDeployIssues') {
     emailext body: '''Thanks
