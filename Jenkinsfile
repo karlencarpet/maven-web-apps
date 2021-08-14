@@ -4,8 +4,7 @@
 node{
   def mavenHome = tool name: 'maven3.8.1'
   stage('CodeClone') {
-    git credentialsId: 'git-credentials', url: 'https://github.com/mylandmarktechs/web'
-  }
+    git credentialsId: 'Git_credentials', url: 'https://github.com/karlencarpet/maven-web-apps.git'  }
   stage('mavenBuild') {
     sh "${mavenHome}/bin/mvn clean package"
   }
@@ -26,12 +25,11 @@ Landmark Technologies''', recipientProviders: [developers()], subject: 'status o
   }
 
   stage('DeployTomcat') {
-    deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://34.239.155.145:7000/')], contextPath: null, war: 'target/*war'
+    deploy adapters: [tomcat9(credentialsId: 'tomcat', path: '', url: 'http://3.142.248.143:8080/')], contextPath: null, war: 'target/*war'
   }
   stage('emailDeployIssues') {
     emailext body: '''Thanks
 
-Landmark Technologies''', recipientProviders: [developers()], subject: 'status of build', to: 'mylandmarktech@gmail.com'
-  }
+Landmark Technologies''', recipientProviders: [developers()], subject: 'builde success', to: 'karlencarpet@yahoo.com' }
   
 }
